@@ -1,30 +1,12 @@
-package com.comparableAndCompatorDemo;
+package com.comparatorInterface;
 
-public class Employe implements Comparable<Employe>{
-	//data
+public class Employe {
 	
-	int id;
-	String name;
 	int sal;
-	
-	Employe(int id, String name, int sal){
-		this.id=id;
-		this.name=name;
+	String name;
+	Employe(int sal, String name){
 		this.sal=sal;
+		this.name=name;
 	}
-
-	@Override
-	public int compareTo(Employe o) {
-		if(sal==o.sal)
-		return 0;
-		else if(sal>o.sal)
-			return 1;
-		else
-			return -1;
-	}
-	
-	
-	
-	
 
 }
